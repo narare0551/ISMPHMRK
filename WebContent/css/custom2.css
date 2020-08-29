@@ -1,0 +1,9 @@
+/* @font-face{ */
+/*   font-family:'NanumBarunGothic'; */
+/*   src:url("../fonts/NanumBarunGothic.eot"); */
+/*   src:local("☺"),url("../fonts/NanumBarunGothic.woff") format("woff"); */
+/* } */
+
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+
+body { font-family: "Helvetica Neue", Helvetica, Arial,'Single Day', "NanumBarunGothic",  sans-serif; }

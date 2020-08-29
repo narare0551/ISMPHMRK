@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bootstrap 101 Template</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap -->
+<link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
+<style>
+.welcomewords {
+	position: absolute;
+	width: 100%;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: black;
+	font-weight: bold;
+	padding: 0px 13.5%;
+}
+
+#yellowmap {
+	width: 100%;
+	height: 100%;
+}
+
+#mentor, #program, #blog, #company ,#signinup {
+	
+	font-size: 20px;
+	font-family: Poppins, -apple-system, system-ui, BlinkMacSystemFont,
+		Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+	/* display: flex;
+	flex-direction: column; */
+	/* -webkit-box-pack: center;
+	justify-content: center; */
+	color: black;
+	height: 100%;
+	/* font-weight: normal; */
+	margin-top: 0px;
+	border-bottom: 0px;
+}
+
+#areyousure {
+	border: 1px solid orange;
+	width: 30%;
+	margin: 0 auto;
+}
+
+ #signinup{
+margin-top: 40px;
+height:100%;
+
+} 
+
+#signupform, #importantmessage {
+	border: 1px solid orange;
+}
+</style>
+
+</head>
+<body>
+<header>
+
+	<!-- 제일 위에 배너 줄  -->
+	<div class="banner">
+		<div class="row">
+			<!-- 	첫번째는 ismplogo이미지 넣음  -->
+
+			<div class="col-md-1">
+				<a href="../index.html"> <img src="../images/ismplogo.PNG"
+					alt="ISMP">
+				</a>
+			</div>
+			<!-- 			로고 끝 -->
+			<!-- 오른쪽 메뉴 (right menu div 작성 ) -->
+			<div class="rightmenu">
+
+				<div class="col-md-1 col-md-offset-2" id="company">
+					<a href="welcomepage.html"><button class="btn btn-warning">Company</button>
+				</a>
+				</div>
+
+
+				<div class="col-md-1" id="mentor"><a href="mainpage.html"><button class="btn btn-warning" >Mentor</button>
+				</a></div>
+				<div class="col-md-1" id="program"><a href="signup.html"><button class="btn btn-warning">Program</button>
+				</a></div>
+				<div class="col-md-1" id="blog"><a href="contentlist.html"><button class="btn btn-warning">Blog</button>
+				</a></div>
+				<!--계정 로그인 로그아웃 묶기 시작 -->
+				<div class="account" id="signinup">
+					<div class="col-md-1">
+						<a href="signup.html">
+							<button type="button" class="btn btn-danger"
+								onClick="signup.html">Sign up</button>
+						</a>
+					</div>
+					<div class="col-md-1">
+						<a href="login.html">
+							<button type="button" class="btn btn-danger">Sign in</button>
+						</a>
+					</div>
+
+				</div>
+				<!--계정 로그인 로그아웃 묶기 끝 -->
+				<!-- 			socialmedia  -->
+				<div  id="socialmedia" class="col-md-2">
+					<a href="https://www.facebook.com/internationalmentorship/"> <img
+						src="https://ismp-us-east-1.s3.amazonaws.com/header/Facebook.png"
+						alt="facebook" class="sc-fzpans cKJzHK">
+
+					</a> &nbsp &nbsp&nbsp<a href="https://www.instagram.com/internationalmentorship/"
+						target="_blank" rel="noopener noreferrer"><img
+						src="https://ismp-us-east-1.s3.amazonaws.com/header/Instagram.png"
+						alt="instagram" class="sc-fzpans cKJzHK"> </a> &nbsp &nbsp&nbsp<a
+						href="https://www.linkedin.com/company/internationalmentorship"
+						target="_blank" rel="noopener noreferrer"><img
+						src="https://ismp-us-east-1.s3.amazonaws.com/header/linkedin.png"
+						alt="linkedin" class="sc-fzpans cKJzHK" style="width: 30px,"
+						height=30px></a>
+				</div>
+			</div>
+			<!-- 		right menu 배너 끝 -->
+		</div>
+	</div>
+	</header>
+<!-- 		signup banner 시작 -->
+
+	<div class="loginbanner" style="background-color: rgb(253, 200, 46);">
+
+<div class="pager">
+		<h2>SIGN UP</h2>
+		</div>
+	</div>
+		
+
+	<div class="row" id="signupbox">
+	<div class="col-md-2"></div>
+		<div class="col-md-3">
+<!-- form시작  -->
+			<form class="ui large form" id ="signupform">
+			<ul class="pager">
+				<div id="personalInfo">
+					<h2 class="sc-fznWqX dAkvW">Application Form</h2>
+					<div class="equal width fields">
+						<div class="required field">
+							<label for="form-input-control-first-name">First name</label>
+							<div class="ui fluid input">
+								<input placeholder="First name" name="first_name"
+									maxlength="100" required="" id="form-input-control-first-name"
+									type="text" value="">
+							</div>
+						</div>
+						<div class="required field">
+							<label for="form-input-control-last-name">Last name</label>
+							<div class="ui fluid input">
+								<input placeholder="Last name" name="last_name" maxlength="100"
+									required="" id="form-input-control-last-name" type="text"
+									value="">
+							</div>
+						</div>
+						<div class="field">
+							<label for="form-input-control-preferred-name">English
+								name</label>
+							<div class="ui fluid input">
+								<input placeholder="English name" name="preferred_name"
+									maxlength="100" id="form-input-control-preferred-name"
+									type="text" value="">
+							</div>
+						</div>
+					</div>
+					<div class="equal width fields">
+						<div class="required field">
+						
+						</div>
+						<div class="required field">
+							<label for="form-input-control-birthday">Birth Year</label>
+							<div class="ui fluid input">
+								<input placeholder="YYYY" name="birth_year" required=""
+									id="form-input-control-birthday" type="text" value="">
+							</div>
+						</div>
+					</div>
+					<div class="equal width fields">
+						<div class="required field">
+							<label for="form-input-control-email">Email</label>
+							<div class="ui fluid input">
+								<input placeholder="Email" name="email" maxlength="100"
+									required="" id="form-input-control-email" type="email" value="">
+							</div>
+						</div>
+					</div>
+					<div class="equal width fields">
+						<div class="required field">
+							<label for="form-input-control-country">Country of Origin</label>
+							<div class="ui fluid input">
+								<input placeholder="Country of Origin" name="country_of_origin"
+									maxlength="100" required="" id="form-input-control-country"
+									type="text" value="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="academicInfo">
+					<p>Which US university or college will you be attending this
+						year, if applicable?</p>
+					<div class="equal width fields">
+						<div class="field">
+							<label for="form-input-control-new-us-school-name">US
+								School Name</label>
+							<div class="ui fluid input">
+								<input placeholder="School Name" name="destination_school"
+									id="form-input-control-new-us-school-name" type="text" value="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="mentorshipInterest">
+					
+					<div class="required field">
+						<div class="ui checkbox">
+							<input required="" class="hidden"
+								id="terms-and-conditions-checkbox" name="terms" readonly=""
+								tabindex="0" type="checkbox" value=""><label
+								for="terms-and-conditions-checkbox"><span>I agree
+									to the <a type="button">Terms of Use</a> and <a type="button">Privacy
+										Policy</a>
+							</span></label>
+						</div>
+					</div>
+					<div class="required field">
+						<div class="ui checkbox">
+							<input required="" class="hidden" id="code-of-conduct-checkbox"
+								name="code_of_conduct" readonly="" tabindex="0" type="checkbox"
+								value=""><label for="code-of-conduct-checkbox"><span>I
+									agree to the <a type="button">Code of Conduct</a>
+							</span></label>
+						</div>
+					</div>
+				</div>
+				<br>
+				<a href="../index.html">
+				<button  id="form-button-control-next" type="button"
+					class="ui large primary button">Submit</button>
+					</a>
+					
+			</form>
+			
+<!-- 			form 끝  -->
+		</div>
+		<div class ="col-md-1" ></div>
+		<div class="col-md-3" id="importantmessage">
+			<div class="ui segment" style="overflow: auto;">
+				<h4 class="sc-fzoiQi ozSmQ">Important Information</h4>
+				<ul class="sc-fzqARJ eLpUJW">
+					<li class="sc-fzqNqU kikdAh">All mentors are volunteers and
+						the mentorship is offered free of charge.</li>
+					<li class="sc-fzqNqU kikdAh">Once your application is
+						submitted, someone will contact you within 7 business days.</li>
+					<li class="sc-fzqNqU kikdAh">If you are under 18, we will ask
+						for your parental or guardian consent for this mentorship.</li>
+					<li class="sc-fzqNqU kikdAh">Please note that we reserve the
+						right to deny any applications.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bootstrap 101 Template</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Bootstrap -->
+<link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
+<style>
+.welcomewords {
+	position: absolute;
+	width: 100%;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: black;
+	font-weight: bold;
+	padding: 0px 13.5%;
+}
+
+#yellowmap {
+	width: 100%;
+	height: 100%;
+}
+
+#mentor, #program, #blog, #company ,#signinup {
+	
+	font-size: 20px;
+	font-family: Poppins, -apple-system, system-ui, BlinkMacSystemFont,
+		Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+	/* display: flex;
+	flex-direction: column; */
+	/* -webkit-box-pack: center;
+	justify-content: center; */
+	color: black;
+	height: 100%;
+	/* font-weight: normal; */
+	margin-top: 0px;
+	border-bottom: 0px;
+}
+
+#areyousure {
+	border: 1px solid orange;
+	width: 30%;
+	margin: 0 auto;
+}
+
+ #signinup{
+margin-top: 40px;
+height:100%;
+
+} 
+
+#signupform, #importantmessage {
+	border: 1px solid orange;
+}
+</style>
+
+</head>
+<body>
+<header>
+
+	<!-- 제일 위에 배너 줄  -->
+	<div class="banner">
+		<div class="row">
+			<!-- 	첫번째는 ismplogo이미지 넣음  -->
+
+			<div class="col-md-1">
+				<a href="./index.html"> <img src="../images/ismplogo.PNG"
+					alt="ISMP">
+				</a>
+			</div>
+			<!-- 			로고 끝 -->
+			<!-- 오른쪽 메뉴 (right menu div 작성 ) -->
+			<div class="rightmenu">
+
+				<div class="col-md-1 col-md-offset-2" id="company">
+					<a href="welcomepage.html"><button class="btn btn-warning">Company</button>
+				</a>
+				</div>
+
+
+				<div class="col-md-1" id="mentor"><a href="mainpage.html"><button class="btn btn-warning" >Mentor</button>
+				</a></div>
+				<div class="col-md-1" id="program"><a href="signup.html"><button class="btn btn-warning">Program</button>
+				</a></div>
+				<div class="col-md-1" id="blog"><a href="contentlist.html"><button class="btn btn-warning">Blog</button>
+				</a></div>
+				<!--계정 로그인 로그아웃 묶기 시작 -->
+				<div class="account" id="signinup">
+					<div class="col-md-1">
+						<a href="signup.html">
+							<button type="button" class="btn btn-danger"
+								onClick="signup.html">Sign up</button>
+						</a>
+					</div>
+					<div class="col-md-1">
+						<a href="login.html">
+							<button type="button" class="btn btn-danger">Sign in</button>
+						</a>
+					</div>
+
+				</div>
+				<!--계정 로그인 로그아웃 묶기 끝 -->
+				<!-- 			socialmedia  -->
+				<div  id="socialmedia" class="col-md-2">
+					<a href="https://www.facebook.com/internationalmentorship/"> <img
+						src="https://ismp-us-east-1.s3.amazonaws.com/header/Facebook.png"
+						alt="facebook" class="sc-fzpans cKJzHK">
+
+					</a> &nbsp &nbsp&nbsp<a href="https://www.instagram.com/internationalmentorship/"
+						target="_blank" rel="noopener noreferrer"><img
+						src="https://ismp-us-east-1.s3.amazonaws.com/header/Instagram.png"
+						alt="instagram" class="sc-fzpans cKJzHK"> </a> &nbsp &nbsp&nbsp<a
+						href="https://www.linkedin.com/company/internationalmentorship"
+						target="_blank" rel="noopener noreferrer"><img
+						src="https://ismp-us-east-1.s3.amazonaws.com/header/linkedin.png"
+						alt="linkedin" class="sc-fzpans cKJzHK" style="width: 30px,"
+						height=30px></a>
+				</div>
+			</div>
+			<!-- 		right menu 배너 끝 -->
+		</div>
+	</div>
+	</header>
+	<!-- 		signup banner 시작 -->
+
+	<div class="loginbanner" style="background-color: rgb(253, 200, 46);">
+
+		<div class="pager">
+			<div class="row">
+
+
+				<div class="col-md-3"></div>
+				<div class="col-md-2">
+					<h2>Search</h2>
+				</div>
+				<div class="col-md-1"></div>
+				<div class="col-md-2">
+					<h2>Topics</h2>
+				</div>
+				<div class="col-md-4"></div>
+
+
+
+
+			</div>
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-2">
+					<input placeholder="search" name="first_name" maxlength="100"
+						required="" id="form-input-control-first-name" type="text"
+						value="">
+				</div>
+				<div class="col-md-1"></div>
+				<div class="col-md-2">
+					<input placeholder="topic" name="first_name" maxlength="100"
+						required="" id="form-input-control-first-name" type="text"
+						value="">
+				</div>
+
+				<div class="col-md-1"></div>
+				<div class="col-md-1">
+					<a href="writepost.html"><button class="btn btn-info">Write
+							A post</button></a>
+				</div>
+				<div class="col-md-1">
+					<a href="deletecontent.html"><button class="btn btn-info">Delete
+							Post</button></a>
+				</div>
+				<br>
+				<div class="row">
+					<div clas="col-md-2"></div>
+				</div>
+
+
+
+			</div>
+			<br>
+		</div>
+	</div>
+	<!-- 	5개 중에 5개 result  -->
+	<section class="contentlist">
+		<div class="result">
+			<pre>
+				<b><h3>&nbsp&nbsp&nbsp&nbsp Viewing 5 out of 5 total results</h3></b>
+			</pre>
+		</div>
+		<!-- 블로그 첫번째 컨텐츠  -->
+
+		<div class="row" id="firstpost">
+			<div class="col-md-1"></div>
+			<div class="col-md-3">
+
+				<img src="../images/campuslife.jpg"
+					alt="Transitioning to the US: Surviving the First Week"
+					class="firstpostimage" width=80% height=80%>
+			</div>
+
+
+			<div class="col-md-5">
+
+				<a color="black"><h3 class="secondposttitle">Transitioning
+						to the US: Surviving the First Week</h3></a>
+				<div class="firstpostcontent">
+					<i>07/06/2020 by Alex Lee</i> - It can be pretty overwhelming to
+					think about all the things you need to get done during your first
+					week in America as an international student. This webinar will
+					provide an introduction and some helpful tips for the tasks you
+					should prioritize during your first week such as: how to find
+					transportation from the airport to your university, how to open a
+					bank account, get a cell phone, and how to st
+
+					<!-- 					<a href="/blogpost/5"> -->
+
+
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+
+
+
+			<br> <br>
+
+			<!-- 두번째 블로그 포스트  -->
+		</div>
+		<div class="row" id="secondpost">
+			<div class="col-md-1"></div>
+			<div class="col-md-3">
+
+				<img src="../images/laptop.jpg" alt=mastering-english
+					"
+					class="secondpostimage" width=80% height=80%>
+			</div>
+
+
+			<div class="col-md-5">
+
+				<a color="black"><h3 class="secondposttitle">Mastering
+						English Writing: Essay Prep And Writing Resources</h3></a>
+				<div class="secondpostcontent">
+					<i>July 06, 2020 by Sharon Chiu</i> Writing essays are difficult
+					even for native born American students, but there are techniques
+					that can make your writing clearer and more persuasive. Come learn
+					these helpful tips for how to approach and structure your essay
+					writing for your classes with this webinar!
+					<!-- 					<a href="/blogpost/5"> -->
+
+
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- 			세번째 blog 포스트 시작  -->
+		<br /> <br>
+
+		<div class="row" id="thirdpost">
+			<div class="col-md-1"></div>
+			<div class="col-md-3">
+
+				<img src="../images/beach.jpg" alt=beachpicture
+					"
+					class="thirdpostimage" width=80% height=80%>
+			</div>
+
+
+
+			<div class="col-md-5">
+
+				<a color="black"><h3 class="thirdposttitle">5 Tips You Must
+						Know To Succeed In Your Online Classes</h3></a>
+				<div class="thirdpostcontent">
+					<i>July 06, 2020 by Sharon Chiu</i> 07/06/2020 by Sharon Chiu -
+					Writing essays are difficult even for native born American
+					students, but there are techniques that can make your writing
+					clearer and more persuasive. Come learn these helpful tips for how
+					to approach and structure your essay writing for your classes with
+					this webinar!
+					<!-- 					<a href="/blogpost/5"> -->
+
+
+					</a>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	</div>
+
+
+
+
+</body>
+</html>
